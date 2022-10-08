@@ -1,3 +1,95 @@
+
+.nav-section{
+  height: fit-content;
+  background-image: linear-gradient(to right, rgb(218, 121, 31), rgb(255, 183, 0));
+}
+
+.welcoming{
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+.welcoming .label{
+  background-image: linear-gradient(to right, rgb(218, 121, 31), rgb(255, 183, 0)) !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 40px;
+  opacity: 0%;
+  animation: welcome-label 0.5s 1.5s forwards;
+}
+
+.welcoming .border{
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgb(218, 121, 31), rgb(255, 183, 0)) 1 !important;
+  width: 100%;
+  animation: welcome 1.5s;
+}
+
+.nav-section .logo{
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.nav-section .btn{
+  width: 100px;
+  border-radius: 0%;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-section input.search{
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 50px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+  flex-grow: 1;
+  padding: 15px;
+  transition: all 0.3s;
+}
+
+.nav-section input.search::placeholder{
+  color: black !important;
+}
+
+.nav-section input.search:focus{
+  outline: none;
+  box-shadow: rgba(90, 69, 0, 0.4) 0px 1px, rgba(90, 69, 0, 0.3) 0px 3px, rgba(90, 69, 0, 0.2) 0px 5px, rgba(90, 69, 0, 0.1) 0px 8px, rgba(90, 69, 0, 0.05) 0px 10px;
+}
+
+.nav-section button.btn.signup{
+  border: 1px solid black;
+  background-image: linear-gradient(to right, rgb(218, 121, 31), rgb(255, 183, 0));
+  transition: all 0.3s;
+}
+
+.nav-section button.btn.signup:hover{
+  background-image: none;
+}
+
+@keyframes welcome {
+  from {width: 0%;} to {width: 100%;}
+}
+
+@keyframes welcome-label {
+  from{
+    top: 40px;
+    opacity: 0%;
+  }
+  to {
+    top: 0px;
+    opacity: 100%;
+  }
+}
+
+body{
+  background-color: rgb(22, 15, 7) !important;
+}
+
 .App {
   text-align: center;
 }
